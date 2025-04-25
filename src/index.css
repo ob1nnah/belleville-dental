@@ -1,0 +1,164 @@
+/*predetermined*/
+.txtcolor1{color: #f7f7f7}
+.txtcolor2{color: #ff6b6b}
+.txtcolor3{color: #1a365d}
+.txtcolor4{color: #000000 }
+
+/* Import the Poppins font */
+@font-face {
+  font-family: 'Poppinslight';
+  font-style: normal;
+  font-weight: 300;
+  src: url(assets/fonts/Poppins-Light.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppinsregular';;
+  font-style: normal;
+  font-weight: 400;
+  src: url(assets/fonts/Poppins-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppinsmedium';
+  font-style: normal;
+  font-weight: 500;
+  src: url(assets/fonts/Poppins-Medium.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppinssemibold';
+  font-style: normal;
+  font-weight: 600;
+  src: url(assets/fonts/Poppins-SemiBold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  src: url(assets/fonts/Poppins-Bold.ttf) format('truetype');
+}
+/* Reset styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f7f7f7;
+}
+
+/* Header styling */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 70px;
+  background-color: #ffffff;
+}
+
+/* Logo and title container */
+.logo-title-div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+.title {
+  font-size: 28px;
+}
+
+/* Navbar styling */
+.navbar-span {
+  display: flex;
+  gap: 64px;
+}
+.nav-link, .nav-link.p
+.nav-link {
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 400;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ff6b6b;
+}
+
+.product {
+  color: #ff6b6b;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');*/
+
+
+/** {*/
+/*  box-sizing: border-box;*/
+/*  margin: 0;*/
+/*  padding: 0;*/
+/*}*/
+
+/*body {*/
+/*  font-family: 'Poppins', sans-serif;*/
+/*}*/
+
+/*.navbar-span {*/
+/*  height: 92px;*/
+/*  padding: 32px 64px;*/
+
+/*  background-color: rgba(0, 0, 0, 0);*/
+/*}*/
+
+/*.logo-title-div {*/
+/*  display: flex;*/
+/*  align-items: center; !* Ensures vertical alignment *!*/
+/*  gap: 8px; !* Keeps consistent spacing *!*/
+/*  height: 32px;*/
+/*}*/
+
+/*.title {*/
+/*  font-size: 28px;*/
+/*  position: relative;*/
+/*  top: 5px;*/
+/*  font-weight: 600;*/
+/*}*/
+/*.links {*/
+/*  width: 550px;*/
+/*  height: 50px;*/
+/*  margin: 0 0 0 592.8px;*/
+/*  padding: 3px 4.9px 3px 0;*/
+/*  background-color: rgba(0, 0, 0, 0);*/
+/*}*/

@@ -1,0 +1,78 @@
+
+/*btn component*/
+.product-btn {
+    display: flex;
+    align-items: center;
+    background-color: #FF6F61; /* Red background color */
+    border: none;
+    border-radius: 50px;
+    padding: 20px 40px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-btn:hover {
+    background-color: #ff4c4c; /* Slightly darker red on hover */
+}
+
+/* Image styling */
+.product-btn .icon {
+    margin-right: 15px;
+    height: 30px;
+    width: 30px;
+}
+/*done btn*/
+
+.hero-container {
+    height: 1040px;
+    padding: 0 5%;
+    /*display: flex;*/
+    background-color: #fefefe;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+.hero-text {
+    max-width: 500px;
+}
+
+.hero-image {
+    background-color: #ccc; /* Placeholder for image */
+    width: 930px;
+    height: 930px;
+    position: relative;
+    bottom: 0;
+    align-self: flex-end; /* aligns the image to bottom */
+}
+
+.captiontitle {
+    line-height: 0.72;
+    /*font-size: 120px;*/
+}
+
+
+.btn-accent {
+    background-color: #ff6b6b;
+    color: white;
+    border-radius: 25px;
+    border: none;
+}
+
+.btn-accent:hover {
+    background-color: #ff4c4c;
+    color: white;
+}
+
+/*osis's additions*/
+.ft-160 {
+    font-size: 160px;
+}
+.ft-135 {
+    font-size: 135px;
+}
+/*osis's additions*/
+
+

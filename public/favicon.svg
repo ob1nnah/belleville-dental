@@ -1,0 +1,73 @@
+<svg width="300" height="340" viewBox="0 0 300 340" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Realistic metal depth -->
+    <radialGradient id="metalGradient" cx="50%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#f5f6fa" />
+      <stop offset="40%" stop-color="#dcdde1" />
+      <stop offset="70%" stop-color="#b2bec3" />
+      <stop offset="100%" stop-color="#636e72" />
+    </radialGradient>
+
+    <!-- Additional lighting for top -->
+    <linearGradient id="topShine" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffffaa" />
+      <stop offset="100%" stop-color="transparent" />
+    </linearGradient>
+
+    <!-- Inner shading glow -->
+    <filter id="molarShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8" result="blur"/>
+      <feOffset dx="0" dy="6" result="offsetBlur"/>
+      <feMerge>
+        <feMergeNode in="offsetBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Molar Tooth Base -->
+  <path d="
+    M150,30
+    C200,15 250,60 240,100
+    C230,140 260,180 220,220
+    C200,240 195,300 175,310
+    C165,315 160,270 150,240
+    C140,210 130,210 120,240
+    C110,270 105,315 95,310
+    C75,300 70,240 50,220
+    C10,180 40,140 30,100
+    C20,60 100,15 150,30Z"
+    fill="url(#metalGradient)"
+    stroke="#2f3640"
+    stroke-width="2"
+    filter="url(#molarShadow)" />
+
+  <!-- Top surface shine -->
+  <path d="
+    M90,60
+    C130,35 170,35 210,60"
+    fill="none"
+    stroke="url(#topShine)"
+    stroke-width="6"
+    stroke-linecap="round" />
+
+  <!-- Left inner curve shading -->
+  <path d="
+    M80,110
+    C100,90 110,100 120,140"
+    fill="none"
+    stroke="#bdc3c7"
+    stroke-width="4"
+    stroke-linecap="round"
+    opacity="0.3" />
+
+  <!-- Right highlight for depth -->
+  <path d="
+    M180,110
+    C190,120 200,130 195,160"
+    fill="none"
+    stroke="#ffffffaa"
+    stroke-width="3"
+    stroke-linecap="round"
+    opacity="0.4" />
+</svg>
