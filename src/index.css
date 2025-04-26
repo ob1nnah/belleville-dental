@@ -5,7 +5,15 @@
 .txtcolor4{color: #000000 }
 
 /* Import the Poppins font */
-@font-face {
+
+.poppins {
+  font-family: 'Poppinsregular', sans-serif;
+}
+.poppins-light {
+  font-family: 'Poppinslight', sans-serif;
+}
+
+/* @font-face {
   font-family: 'Poppinslight';
   font-style: normal;
   font-weight: 300;
@@ -31,7 +39,9 @@
   font-style: normal;
   font-weight: 600;
   src: url(assets/fonts/Poppins-SemiBold.ttf) format('truetype');
-}
+} */
+
+
 
 @font-face {
   font-family: 'Poppins';
@@ -51,54 +61,6 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: #f7f7f7;
 }
-
-/* Header styling */
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 40px 70px;
-  background-color: #ffffff;
-}
-
-/* Logo and title container */
-.logo-title-div {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.logo {
-  width: 40px;
-  height: 40px;
-}
-
-.title {
-  font-size: 28px;
-}
-
-/* Navbar styling */
-.navbar-span {
-  display: flex;
-  gap: 64px;
-}
-.nav-link, .nav-link.p
-.nav-link {
-  font-size: 16px;
-  text-decoration: none;
-  font-weight: 400;
-  color: #333;
-  transition: color 0.3s ease;
-}
-
-.nav-link:hover {
-  color: #ff6b6b;
-}
-
-.product {
-  color: #ff6b6b;
-}
-
 
 
 

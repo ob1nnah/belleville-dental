@@ -28,7 +28,6 @@
 .hero-container {
     height: 1040px;
     padding: 0 5%;
-    /*display: flex;*/
     background-color: #fefefe;
     justify-content: space-between;
     position: relative;

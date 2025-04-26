@@ -5,8 +5,8 @@ import './HeroSection.css';
 const ProductButton = () => {
     return (
 
-        <button className="product-btn fw-semibold">
-            <img src="public/store-icon.png" alt="White Box" className="icon"/>
+        <button className="product-btn">
+            <img src="store-icon.png" alt="White Box" className="icon"/>
             Check out our Products
         </button>
     );
@@ -33,7 +33,7 @@ const HeroSection = () => {
                     </a>
                 </div>
             </div>
-            <img className="hero-image rounded shadow-sm"  src="public/1BG.png" alt="" />
+            <img className="hero-image rounded shadow-sm"  src="1BG.png" alt="" />
         </div>
     );
 };
