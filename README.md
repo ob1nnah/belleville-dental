@@ -20,14 +20,14 @@ This Single Page Application SPA Webpage includes:
 The site uses a clever responsive design strategy:
 
 * All measurements are relative to a 1920px base width
-* CSS variables and [`calc()`] functions create a fluid layout that scales proportionally
+* CSS variables and `calc()` functions create a fluid layout that scales proportionally
 * Media queries handle layout changes on smaller devices
 
 ### Getting Started
 1. Clone this repository
-2. Install dependencies: [`npm install`]
-3. Run development server: [`npm run dev`]
-4. Build for production: [`npm run build`]
+2. Install dependencies: `npm install`
+3. Run development server: `npm run dev`
+4. Build for production: `npm run build`
 
 ### Project Structure
 * components - React component (Navbar, Hero)
