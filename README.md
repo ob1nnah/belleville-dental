@@ -1,12 +1,35 @@
-# React + Vite
+# Bellevielle Dental
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Overview
+This Single Page Application SPA Webpage includes:
 
-Currently, two official plugins are available:
+* **Navigation Bar**: Main site navigation with links to Research, About Us, Education, and Products sections
+* **Hero Section**: Attention-grabbing hero area with "SMILE BRIGHTER" headline.
+* **Responsive Design**: Fully responsive layout that scales appropriately across different device sizes
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Technical Details
 
-## Expanding the ESLint configuration
+* Built with **React 19** and **Vite**
+* Uses **Bootstrap** **5** for baseline styling
+* Implements **React** **Router** for navigation
+* Features completely responsive design using CSS variables and relative sizing
+* Typography using **Poppins** font family (multiple weights: 300, 400, 500, 600, 700, 800, 900)
+* Custom responsive components built from scratch
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Responsive Design Approach
+The site uses a clever responsive design strategy:
+
+* All measurements are relative to a 1920px base width
+* CSS variables and [`calc()`] functions create a fluid layout that scales proportionally
+* Media queries handle layout changes on smaller devices
+
+### Getting Started
+1. Clone this repository
+2. Install dependencies: [`npm install`]
+3. Run development server: [`npm run dev`]
+4. Build for production: [`npm run build`]
+
+### Project Structure
+* components - React component (Navbar, Hero)
+* fonts - Poppins font files
+* public - Static assets like images
