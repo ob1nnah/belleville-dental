@@ -4,10 +4,12 @@ import Navbar from "./components/Navbar.jsx";
 
 const App = () => {
    return (
+    <>
+        <Navbar />
        <main>
-           <Navbar />
-           <HeroSection></HeroSection>
+           <HeroSection />
        </main>
+    </>
    )
 }
 

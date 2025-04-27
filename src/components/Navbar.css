@@ -1,47 +1,82 @@
+/* Define CSS variables for responsive design based on a 1920px wide design */
+:root {
+  --header-padding-vertical: calc((40 / 1920) * 100vw);
+  --header-padding-horizontal: calc((70 / 1920) * 100vw);
+  --logo-size: calc((40 / 1920) * 100vw);
+  --nav-link-size: calc((24 / 1920) * 100vw);
+  --navbar-gap: calc((64 / 1920) * 100vw);
+  --title-size: calc((30 / 1920) * 100vw);
+  --logo-title-gap: calc((8 / 1920) * 100vw);
+}
+
 /* Header styling */
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 40px 70px;
-    background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--header-padding-vertical) var(--header-padding-horizontal);
+}
+
+/* Logo and title container */
+.logo-title-div {
+  display: flex;
+  align-items: center;
+  gap: var(--logo-title-gap);
+}
+
+.logo {
+  width: var(--logo-size);
+  height: var(--logo-size);
+}
+
+.title {
+  font-size: var(--title-size);
+}
+
+/* Navbar styling */
+.navbar-span {
+  display: flex;
+  gap: var(--navbar-gap);
+  padding-right: 1.5% ;
+  align-items: center;
+}
+
+.nav-link {
+  font-size: var(--nav-link-size);
+  text-decoration: none;
+  font-weight: 400;
+  color: #4B5563;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ff6b6b;
+}
+
+.productbtn {
+  border: 0.125em solid #ff6b6b;
+  color: #ff6b6b;
+  padding: 0.5em 1.5em ; /* 8px 24px */
+  border-radius: 1.875em; /* 30px */
+  display: inline-block;
+}
+
+.productbtn:hover {
+  background-color: #ff6b6b;
+  color: white;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .header {
+      flex-direction: column;
+      padding: calc((20 / 1920) * 100vw);
   }
-  
-  /* Logo and title container */
-  .logo-title-div {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-  
-  .logo {
-    width: 40px;
-    height: 40px;
-  }
-  
-  .title {
-    font-size: 28px;
-  }
-  
-  /* Navbar styling */
   .navbar-span {
-    display: flex;
-    gap: 64px;
+      flex-direction: column;
+      gap: calc((32 / 1920) * 100vw);
   }
-  .nav-link, .nav-link.p
-  .nav-link {
-    font-size: 24px;
-    text-decoration: none;
-    font-weight: 400;
-    color: #333;
-    transition: color 0.3s ease;
+  .logo-title-div {
+      gap: calc((4 / 1920) * 100vw);
   }
-  
-  .nav-link:hover {
-    color: #ff6b6b;
-  }
-  
-  .product {
-    color: #ff6b6b;
-  }
-  
+}
