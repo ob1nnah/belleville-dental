@@ -1,0 +1,54 @@
+.research-container {
+
+}
+
+section {
+    width: 100%;
+}
+
+.width {
+    max-width: 10em;
+}
+.research-card {
+    width: 35.3125em; /* width: 565px; */
+    height: 28em;
+    background-color: #F9FAFB;
+}
+
+.cardimage {
+    width: inherit;
+}
+.rlogo {
+    width: 2em;
+    height: 2em;
+    margin: 2em 1.25em 1em;
+}
+
+.cardname{
+    margin: 0 1em;
+    font-size: 1.25em;
+    width: 100%;
+}
+p , a{ margin: 0 1.25em; }
+
+
+
+/* product button change this */
+a{
+    text-decoration: none;
+    width: fit-content!important;
+}
+.productbtn {
+    border: 0.125em solid #ff6b6b;
+    color: #ff6b6b;
+    padding: 0.5em 1.5em ; /* 8px 24px */
+    border-radius: 1.875em; /* 30px */
+    display: inline-block;
+  }
+  
+  .productbtn:hover {
+    background-color: #ff6b6b;
+    color: white;
+  }
+  
+/* product button change this */

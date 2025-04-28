@@ -7,6 +7,18 @@
 .c-pad {
   padding: 0 3%;
 }
+.lh-0p72 {
+  line-height: 0.72;
+}
+.lh-1 {
+  line-height: 1;
+}
+.pgtitle {
+  font-size: 3.25em;
+}
+.pgsubtitle {
+  font-size: 1.5em;
+}
 
 /* Set up our base design info and scaling factor */
 :root {

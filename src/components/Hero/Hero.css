@@ -26,10 +26,9 @@
     .st-fontsize {
         font-size: var(--st-font-size);
     }
-    .lh-0p72 {
+/*     .lh-0p72 {
         line-height: 0.72;
-    }
-
+    } was here */
 
     .p-fontsize {
         font-size: var(--p-font-size);
