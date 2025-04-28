@@ -4,6 +4,10 @@
 .txtcolor3 { color: #1a365d; }
 .txtcolor4 { color: #000000; }
 
+.c-pad {
+  padding: 0 3%;
+}
+
 /* Set up our base design info and scaling factor */
 :root {
     /* Our design is based on a 1920px width */

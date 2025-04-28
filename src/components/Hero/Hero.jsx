@@ -1,5 +1,5 @@
 import React from 'react';
-import './HeroSection.css';
+import './Hero.css';
 
 
 const ProductButton = () => {
@@ -15,7 +15,7 @@ const ProductButton = () => {
 
 const HeroSection = () => {
     return (
-        <div className="hero-container d-flex align-items-center">
+        <div className="hero-container c-pad d-flex align-items-center">
             <div className="hero-text pe-5">
                 <h1 className="lh-0p72 fw-bold">
                     <span className="txtcolor3 t-fontsize">SMILE</span>{' '}<br />

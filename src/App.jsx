@@ -1,13 +1,14 @@
-import './components/HeroSection.css'
-import HeroSection from "./components/Hero.jsx";
-import Navbar from "./components/Navbar.jsx";
+import Hero from "./components/Hero/Hero.jsx";
+import Navbar from "./components/Navbar/Navbar.jsx";
+import Research from './components/Research/Research.jsx';
 
 const App = () => {
    return (
     <>
         <Navbar />
        <main>
-           <HeroSection />
+           <Hero />
+           <Research />
        </main>
     </>
    )
