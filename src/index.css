@@ -3,6 +3,23 @@
 .txtcolor2 { color: #ff6b6b; }
 .txtcolor3 { color: #1a365d; }
 .txtcolor4 { color: #000000; }
+.customgrey {color: #4B5563;}
+
+/* red outline button in navbar and research components */
+.redbtn {
+  border: 0.125em solid #ff6b6b;
+  color: #ff6b6b!important;
+  padding: 0.5em 1.5em ; /*8px 24px*/
+  border-radius: 1.875em; /* 30px */
+  display: inline-block;
+}
+
+.redbtn:hover {
+  background-color: #ff6b6b;
+  color: white;
+}
+/* red outline button in navbar and research components */
+
 
 .c-pad {
   padding: 0 3%;

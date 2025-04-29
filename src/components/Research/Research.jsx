@@ -1,38 +1,38 @@
 import React from 'react'
 import './Research.css'
+import LCard from '../LCard/LCard.jsx'
 
-const rCard = () => {
+const JustACard = ({ statsno, statsdesc }) => {
     return (
-        <></>
+        <>
+            <div className="d-flex flex-column align-items-center justacard shadow-sm">
+                <span className="txtcolor2 statsno fw-bold">{statsno}</span>
+                <p className="statsdesc">{statsdesc}</p>
+            </div>
+        </>
     )
 }
-
 
 const Research = () => {
     return (
         <>
             <section className="research-container mt-5">
                 <div className="d-flex flex-column lh-1">
-                    <span className="pgtitle fw-bold txtcolor3 mt-4 width">ADVANCING DENTAL CARE</span>
+                    <span className="pgtitle fw-bold txtcolor3 mt-4 cm-width">ADVANCING DENTAL CARE</span>
                     <span className="pgsubtitle fw-normal txtcolor2 mt-4">BRIGHTER FUTURES THROUGH RESEARCH</span>
                 </div>
                 <div className="d-flex justify-content-between">
-                    <div className="research-card d-flex flex-column mt-5 shadow-sm">
-                        <img className="cardimage" src="research1.png" alt="research banner" />
-                        <img className="rlogo" src="rlogo1.png" alt="rlogo1" />
-                        <span className="fw-bold cardname txtcolor3">Clinical Studies</span>
-                        <p className="p-a-margin">Leading research in dental treatments and procedures</p>
-                        <a href="" className="p-a-margin productbtn mt-4">Learn More</a>
-                    </div>
-                    <div className="research-card d-flex flex-column mt-5 shadow-sm">
-                        <img className="cardimage" src="research2.png" alt="research banner" />
-                        <img className="rlogo" src="rlogo2.png" alt="rlogo2" />
-                        <span className="fw-bold cardname txtcolor3">Innovation in Technology</span>
-                        <p className="p-a-margin">Developing cutting-edge dental technologies</p>
-                        <a href="" className="p-a-margin productbtn mt-4">Learn More</a>
+                    <LCard cimg="research1.png" icon="rlogo1.png" iconalt="rlogo1" caption="Clinical Studies" subcaption="Leading research in dental treatments and procedures" alt="research banner" />
+                    <LCard cimg="research2.png" icon="rlogo2.png" iconalt="rlogo2" caption="Innovation in Technology" subcaption="Developing cutting-edge dental technologies" alt="research banner" />
+                </div>
+                <span className="statstitle d-flex justify-content-center mt-5 fw-bold txtcolor3">Research Impact</span>
+                <div>
+                    <div className="d-flex justify-content-between mt-5">
+                        <JustACard statsno="50+" statsdesc="Research Papers Published" />
+                        <JustACard statsno="1000+" statsdesc="Patients Involved" />
+                        <JustACard statsno="25+" statsdesc="Research Papers" />
                     </div>
                 </div>
-
             </section>
         </>
     )

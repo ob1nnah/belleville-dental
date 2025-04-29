@@ -1,0 +1,23 @@
+.l-card {
+    width: 45vw;
+    height: fit-content;
+    background-color: #F9FAFB;
+    border-radius: 1.25em;
+}
+
+.lcardimage {
+    width: inherit;
+    border-radius: 1.25em 1.25em 0 0;
+}
+.lcardlogo {
+    width: 2em;
+    height: 2em;
+    /* margin: 2em 1.25em 1em; */
+}
+
+.lcardname{
+    /* margin: 0 1em; */
+    font-size: 1.25em;
+    width: 100%;
+}
+.lc-margin{ margin: 2em 1.25em; }

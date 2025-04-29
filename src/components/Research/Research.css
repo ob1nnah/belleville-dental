@@ -3,32 +3,9 @@ section {
     width: 100%;
 }
 
-.width {
+.cm-width {
     max-width: 10em;
 }
-.research-card {
-    width: 35.3125em; /* width: 565px; */
-    height: 28em;
-    background-color: #F9FAFB;
-}
-
-.cardimage {
-    width: inherit;
-}
-.rlogo {
-    width: 2em;
-    height: 2em;
-    margin: 2em 1.25em 1em;
-}
-
-.cardname{
-    margin: 0 1em;
-    font-size: 1.25em;
-    width: 100%;
-}
-.p-a-margin{ margin: 0 1.25em; }
-
-
 
 /* product button change this */
 a{
@@ -49,3 +26,30 @@ a{
   }
   
 /* product button change this */
+
+/* Just A card- Showing Statistics */
+.statstitle {
+    font-size: 1.825em;
+    margin: 0 1.25em;
+}
+
+.justacard {
+    width: 45vw;
+    height: fit-content;
+    background-color: #F9FAFB;
+    border-radius: 1.25em;
+    padding: 2em 1.25em;
+    margin: 0 1.25em;
+}
+
+.statsno{
+    font-size: 2.5em;
+    margin: 0 0.5em;
+}
+.statsdesc{
+    font-size: 1.25em;
+    color: #4B5563;
+    margin: 0 0.5em;
+}
+
+/* Just A card- Showing Statistics */

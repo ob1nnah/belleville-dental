@@ -1,7 +1,7 @@
 /* Define CSS variables for responsive design based on a 1920px wide design */
 :root {
   --logo-size: calc((40 / 1920) * 100vw);
-  --nav-link-size: calc((24 / 1920) * 100vw);
+  --nav-link-size: calc((20 / 1920) * 100vw);
   --navbar-gap: calc((64 / 1920) * 100vw);
   --title-size: calc((30 / 1920) * 100vw);
   --logo-title-gap: calc((8 / 1920) * 100vw);
@@ -48,19 +48,6 @@
 
 .nav-link:hover {
   color: #ff6b6b;
-}
-
-.productbtn {
-  border: 0.125em solid #ff6b6b;
-  color: #ff6b6b;
-  padding: 0.5em 1.5em ; /*8px 24px*/
-  border-radius: 1.875em; /* 30px */
-  display: inline-block;
-}
-
-.productbtn:hover {
-  background-color: #ff6b6b;
-  color: white;
 }
 
 /* Media query for smaller screens */

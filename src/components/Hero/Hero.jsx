@@ -26,11 +26,11 @@ const HeroSection = () => {
                     Progressive dental solutions for your entire family.
                 </p>
                 <ProductButton />
-                <div className="mt-3">
-                    <a href="#" className="txtcolor2 small text-decoration-none">
+                {/* <div className="mt-3">
+                    <a href="#" className="txtcolor2 mt-3 small text-decoration-none">
                         Try new patient special →
                     </a>
-                </div>
+                </div> */}
             </div>
             <img draggable="false" className="hero-image imgfx"  src="1BG.png" alt="" />
         </div>
