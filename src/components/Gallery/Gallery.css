@@ -11,3 +11,21 @@
     object-fit: scale-down 100%;
     transition: 0.3s ease-in-out;
 }
+
+/* Responsive gallery styling */
+@media (max-width: 768px) {
+    .g-card {
+      padding: 0.5em;
+    }
+    
+    .gallery-image {
+      height: auto;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .g-card.col-sm-4 {
+      width: 100%;
+      margin-bottom: 1em;
+    }
+  }

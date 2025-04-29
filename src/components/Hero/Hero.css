@@ -7,6 +7,11 @@
     --t-font-size: calc((160 / 1920) * 100vw); /* Title font size */
     --st-font-size: calc((140 / 1920) * 100vw); /* Subtitle font size */
     --p-font-size: calc((20 / 1920) * 100vw);
+    --btn-font-size: calc((16 / 1920) * 100vw);
+        --btn-padding-v: calc((20 / 1920) * 100vw);
+        --btn-padding-h: calc((36 / 1920) * 100vw);
+        --btn-border-radius: calc((50 / 1920) * 100vw);
+        --btn-gap: calc((8 / 1920) * 100vw);
   }
 
   .hero-container {
@@ -47,19 +52,19 @@
     .imgfx {
         opacity: 0.8; /* out of 1 so it is 80% */
     }
-    
     .heroproduct-btn {
         background-color: #ff6b6b;
         border: none;
-        border-radius: 3.125em;
-        padding: 1.25em 2.25em; /* relative padding now */
+        border-radius: var(--btn-border-radius);
+        padding: var(--btn-padding-v) var(--btn-padding-h);
+        width: fit-content;
         color: white;
-        font-size: 1em;
+        font-size: var(--btn-font-size);
         cursor: pointer;
         transition: background-color 0.3s ease;
         
         display: inline-flex;
-        gap: 0.5em;
+        gap: var(--btn-gap);
         text-decoration: none;
         text-align: center;
     }
@@ -75,3 +80,53 @@
         width: 1.5em;
     }
 
+/* Media queries for hero section */
+@media (max-width: 1024px) {
+    .hero-container {
+      --hero-height: calc((1200 / 1920) * 100vw);
+    }
+    
+    .hero-text {
+      max-width: 50%;
+    }
+    
+    .hero-image {
+      width: 45%;
+      height: auto;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero-container {
+      --hero-height: auto;
+      flex-direction: column-reverse;
+      padding: 2em 0;
+    }
+    
+    .hero-text {
+      max-width: 100%;
+      padding: 0;
+      text-align: center;
+      margin-top: 2em;
+    }
+    
+    .heroproduct-btn {
+      margin: 1.5em auto;
+      padding: 0.75em 1.5em;
+      font-size: calc((20 / 1920) * 100vw);
+    }
+    
+    .hero-image {
+      width: 90%;
+      height: auto;
+      margin: 0 auto;
+    }
+    
+    .t-fontsize {
+      font-size: calc((100 / 1920) * 100vw);
+    }
+    
+    .st-fontsize {
+      font-size: calc((80 / 1920) * 100vw);
+    }
+  }

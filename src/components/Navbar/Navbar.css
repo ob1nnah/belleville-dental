@@ -51,7 +51,7 @@
 }
 
 /* Media query for smaller screens */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .header {
       flex-direction: column;
       padding: calc((20 / 1920) * 100vw);
@@ -62,5 +62,36 @@
   }
   .logo-title-div {
       gap: calc((4 / 1920) * 100vw);
+  }
+} */
+ /* Media query for smaller screens */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: calc((20 / 1920) * 100vw);
+  }
+  
+  .navbar-span {
+    flex-direction: column;
+    gap: calc((20 / 1920) * 100vw);
+    width: 100%;
+    margin-top: 1em;
+  }
+  
+  .logo-title-div {
+    gap: calc((4 / 1920) * 100vw);
+  }
+  
+  .nav-link {
+    padding: 0.5em 0;
+    width: 100%;
+    text-align: center;
+    font-size: calc((24 / 1920) * 100vw);
+  }
+  
+  /* Make the PRODUCTS button full width */
+  .redbtn {
+    width: 100%;
+    text-align: center;
   }
 }

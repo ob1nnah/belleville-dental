@@ -52,4 +52,42 @@ a{
     margin: 0 0.5em;
 }
 
+
 /* Just A card- Showing Statistics */
+
+/* Responsive statistics cards */
+@media (max-width: 768px) {
+    .justacard {
+      width: 30vw;
+      padding: 1.5em 1em;
+      margin: 0 0.5em;
+    }
+    
+    .statsno {
+      font-size: 2em;
+    }
+    
+    .statsdesc {
+      font-size: 1em;
+    }
+    
+    .cm-width {
+      max-width: 100%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .justacard {
+      width: 100%;
+      margin: 0.5em 0;
+    }
+    
+    .statstitle {
+      font-size: 1.5em;
+    }
+    
+    /* Stack statistics cards vertically */
+    .research-container .d-flex.justify-content-between {
+      flex-direction: column;
+    }
+  }
