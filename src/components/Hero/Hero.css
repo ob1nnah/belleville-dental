@@ -1,9 +1,9 @@
 
 :root {
     /* --hero-height: calc((1040 / 1920) * 100vw); */
-    --hero-height: calc((1000 / 1920) * 100vw);
+    --hero-height: calc((900 / 1920) * 100vw);
     --hero-text-maxwidth: calc((500 / 1920) * 100vw);
-    --image-size: calc((930 / 1920) * 100vw);
+    --image-size: calc((850 / 1920) * 100vw);
     --t-font-size: calc((160 / 1920) * 100vw); /* Title font size */
     --st-font-size: calc((140 / 1920) * 100vw); /* Subtitle font size */
     --p-font-size: calc((20 / 1920) * 100vw);
@@ -26,11 +26,9 @@
     .st-fontsize {
         font-size: var(--st-font-size);
     }
-/*     .lh-0p72 {
-        line-height: 0.72;
-    } was here */
 
     .p-fontsize {
+        /* font-size: 1em; */
         font-size: var(--p-font-size);
     }
 
@@ -50,7 +48,7 @@
         opacity: 0.8; /* out of 1 so it is 80% */
     }
     
-    .product-btn {
+    .heroproduct-btn {
         background-color: #ff6b6b;
         border: none;
         border-radius: 3.125em;
@@ -67,7 +65,7 @@
     }
     
     /* Hover */
-    .product-btn:hover {
+    .heroproduct-btn:hover {
         background-color: #ff4c4c;
     }
     

@@ -5,10 +5,10 @@ import Research from './components/Research/Research.jsx';
 const App = () => {
    return (
     <>
-        <Navbar />
-       <main>
-           <Hero />
-           <Research />
+       <main className="c-pad">
+            <Navbar />
+            <Hero />
+            <Research />
        </main>
     </>
    )

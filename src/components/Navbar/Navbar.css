@@ -1,7 +1,5 @@
 /* Define CSS variables for responsive design based on a 1920px wide design */
 :root {
-  --header-padding-vertical: calc((40 / 1920) * 100vw);
-  --header-padding-horizontal: calc((70 / 1920) * 100vw);
   --logo-size: calc((40 / 1920) * 100vw);
   --nav-link-size: calc((24 / 1920) * 100vw);
   --navbar-gap: calc((64 / 1920) * 100vw);
@@ -14,9 +12,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: var(--header-padding-vertical) var(--header-padding-horizontal);
+  padding: 1em 0em;
+  background-color: #f7f7f7;
 }
-
 /* Logo and title container */
 .logo-title-div {
   display: flex;
@@ -37,7 +35,6 @@
 .navbar-span {
   display: flex;
   gap: var(--navbar-gap);
-  padding-right: 1.5% ;
   align-items: center;
 }
 
@@ -56,7 +53,7 @@
 .productbtn {
   border: 0.125em solid #ff6b6b;
   color: #ff6b6b;
-  padding: 0.5em 1.5em ; /* 8px 24px */
+  padding: 0.5em 1.5em ; /*8px 24px*/
   border-radius: 1.875em; /* 30px */
   display: inline-block;
 }

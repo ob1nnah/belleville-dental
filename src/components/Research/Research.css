@@ -26,7 +26,7 @@ section {
     font-size: 1.25em;
     width: 100%;
 }
-p , a{ margin: 0 1.25em; }
+.p-a-margin{ margin: 0 1.25em; }
 
 
 
@@ -35,7 +35,7 @@ a{
     text-decoration: none;
     width: fit-content!important;
 }
-.productbtn {
+.learnmorebtn {
     border: 0.125em solid #ff6b6b;
     color: #ff6b6b;
     padding: 0.5em 1.5em ; /* 8px 24px */
@@ -43,7 +43,7 @@ a{
     display: inline-block;
   }
   
-  .productbtn:hover {
+  .learnmorebtn:hover {
     background-color: #ff6b6b;
     color: white;
   }
