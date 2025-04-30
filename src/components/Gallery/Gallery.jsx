@@ -12,7 +12,7 @@ const GalleryCard = ({ gimg, galt }) => {
 const Gallery = () => {
     return (
         <div>
-            <section className="gallery-container mt-5">
+            <section id="#gallery" className="mt-5">
                 <div className="d-flex flex-column m lh-1">
                     <span className="pgtitle fw-bold txtcolor3 mt-4 cm-width m-auto">OUR GALLERY</span>
                     <span className="pgsubtitle fw-normal txtcolor2 mt-4 m-auto">A glimpse into our practice</span>

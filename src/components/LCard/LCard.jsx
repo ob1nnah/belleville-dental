@@ -4,8 +4,8 @@ import './LCard.css';
 const LCard = ( {cimg, cimgalt, icon, iconalt, caption, subcaption }) => {
     return (
         <>
-            <div className="l-card d-flex flex-column mt-5 shadow-sm">
-                <img className="lcardimage" src={cimg} alt={cimgalt} />
+            <div className="l-card d-flex flex-column mt-4 shadow-sm">
+                <img draggable="false" className="lcardimage" src={cimg} alt={cimgalt} />
                 <div className="lc-margin flex-column d-flex">
                     <img className="lcardlogo" src={icon} alt={iconalt} />
                     <span className="fw-bold lcardname txtcolor3">{caption}</span>

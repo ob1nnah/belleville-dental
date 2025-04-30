@@ -14,9 +14,10 @@
   display: inline-block;
 }
 
-.redbtn:hover {
+
+.redbtn:hover ,.redbtn.active{ /* redbtn from index.css is global this is redbtn active used in navbar */
   background-color: #ff6b6b;
-  color: white;
+  color: #ffffff!important;
 }
 /* red outline button in navbar and research components */
 
@@ -106,4 +107,8 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: var(--base-font-size);
     background-color: #f7f7f7;
+}
+/* Pages are grouped into sections */
+section {
+  width: 100%;
 }

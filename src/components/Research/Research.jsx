@@ -6,7 +6,7 @@ const JustACard = ({ statsno, statsdesc }) => {
     return (
         <>
             <div className="d-flex flex-column align-items-center justacard shadow-sm">
-                <span className="txtcolor2 statsno fw-bold">{statsno}</span>
+                <span className="txtcolor2 statsno fw-semibold">{statsno}</span>
                 <p className="statsdesc">{statsdesc}</p>
             </div>
         </>
@@ -16,7 +16,7 @@ const JustACard = ({ statsno, statsdesc }) => {
 const Research = () => {
     return (
         <>
-            <section className="research-container mt-5">
+            <section>
                 <div className="d-flex flex-column lh-1">
                     <span className="pgtitle fw-bold txtcolor3 mt-4 cm-width">ADVANCING DENTAL CARE</span>
                     <span className="pgsubtitle fw-normal txtcolor2 mt-4">BRIGHTER FUTURES THROUGH RESEARCH</span>

@@ -5,7 +5,7 @@ const Education = () => {
     return (
         <div>
             <>
-                <section className="research-container mt-5">
+                <section>
                     <div className="d-flex flex-column lh-1">
                         <span className="pgtitle fw-bold txtcolor3 mt-4 cm-width">LEARN WITH US</span>
                         <span className="pgsubtitle fw-normal txtcolor2">DENTAL EDUCATION FOR ALL</span>
