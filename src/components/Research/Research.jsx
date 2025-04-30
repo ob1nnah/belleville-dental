@@ -25,7 +25,7 @@ const Research = () => {
                     <LCard cimg="research1.png" icon="rlogo1.png" iconalt="rlogo1" caption="Clinical Studies" subcaption="Leading research in dental treatments and procedures" alt="research banner" />
                     <LCard cimg="research2.png" icon="rlogo2.png" iconalt="rlogo2" caption="Innovation in Technology" subcaption="Developing cutting-edge dental technologies" alt="research banner" />
                 </div>
-                <span className="statstitle d-flex justify-content-center mt-5 fw-bold txtcolor3">Research Impact</span>
+                <span className="statstitle d-flex justify-content-center mt-5 fw-semibold txtcolor3">Research Impact</span>
                 <div>
                     <div className="d-flex justify-content-between mt-5">
                         <JustACard statsno="50+" statsdesc="Research Papers Published" />
