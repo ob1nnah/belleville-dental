@@ -11,11 +11,11 @@ const GalleryCard = ({ gimg, galt }) => {
 
 const Gallery = () => {
     return (
-        <div>
-            <section id="#gallery" className="mt-5">
+        <div >
+            <section id="gallery" className="mt-5">
                 <div className="d-flex flex-column m lh-1">
-                    <span className="pgtitle fw-bold txtcolor3 mt-4 cm-width m-auto">OUR GALLERY</span>
-                    <span className="pgsubtitle fw-normal txtcolor2 mt-4 m-auto">A glimpse into our practice</span>
+                    <span className="pgtitle fw-bold txtcolor3  cm-width m-auto">OUR GALLERY</span>
+                    <span className="pgsubtitle fw-normal txtcolor2 m-auto">A glimpse into our practice</span>
                 </div>
                 <div className="row mt-4 g-card ">
                     <GalleryCard gimg="gallery/1.png" caption="Office and Observation Room" />

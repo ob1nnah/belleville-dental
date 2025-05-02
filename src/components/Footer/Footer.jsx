@@ -75,10 +75,10 @@ const Footer = () => {
                             <p className="footercaption fw-light">Professional dental care for your perfect smile</p>
                         </div>
                         <div className="col-md-3 mb-4 sitemp">
-                            <span className="fw-bold"><HashLink smooth to="/" className="txtcolor1">Home</HashLink></span>
+                            <span className="fw-bold"><HashLink smooth to="/#" className="txtcolor1">Home</HashLink></span>
                             <ul>
                                 <li><HashLink smooth to="/#gallery" className="txtcolor1 sitemp-links">Gallery</HashLink></li>
-                                <li><HashLink smooth to="/aboutus" className="txtcolor1 sitemp-links">About Us</HashLink></li>
+                                <li><HashLink smooth to="/aboutus/#" className="txtcolor1 sitemp-links">About Us</HashLink></li>
                                 <li><HashLink smooth to="/#faq" className="txtcolor1 sitemp-links">FAQ</HashLink></li>
                                 <li><HashLink smooth to="/#contactus" className="txtcolor1 sitemp-links">Contact Us</HashLink></li>
 
@@ -87,14 +87,14 @@ const Footer = () => {
                             </ul>
                         </div>
                         <div className="col-md-3 mb-4 sitemp">
-                            <span className="fw-bold"><HashLink smooth to="/research" className="txtcolor1">Research</HashLink></span>
+                            <span className="fw-bold"><HashLink smooth to="/research/#" className="txtcolor1">Research</HashLink></span>
                             <ul>
                                 <li><a href="#" className="txtcolor1 sitemp-links text-decoration-none">Clinical Studies</a></li>
                                 <li><a href="#" className="txtcolor1 sitemp-links text-decoration-none">Innovation in Technology</a></li>
                             </ul>
                         </div>
                         <div className="col-md-3 mb-4 sitemp">
-                        <span className="fw-bold"><HashLink smooth to="/education" className="txtcolor1">Education</HashLink></span>
+                        <span className="fw-bold"><HashLink smooth to="/education/#" className="txtcolor1">Education</HashLink></span>
                             <ul>
                                 <li><a href="#" className="txtcolor1 sitemp-links text-decoration-none">Professional Education</a></li>
                                 <li><a href="#" className="txtcolor1 sitemp-links text-decoration-none">Patient Education</a></li>

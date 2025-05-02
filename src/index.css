@@ -5,6 +5,12 @@
 .txtcolor4 { color: #000000; }
 .customgrey {color: #4B5563;}
 
+/* scrolling fix */
+html {
+  scroll-padding-top: 5em; /* Adjust based on your header size */
+  /* scroll-padding-top: 60px; Adjust based on your header size */
+}
+
 /* red outline button in navbar and research components */
 .redbtn {
   border: 0.125em solid #ff6b6b;
