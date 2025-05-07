@@ -7,8 +7,9 @@
 
 /* scrolling fix */
 html {
-  scroll-padding-top: 5em; /* Adjust based on your header size */
-  /* scroll-padding-top: 60px; Adjust based on your header size */
+  scroll-padding-top: auto; /* Adjust based on your header size */
+  /* scroll-padding-top: 5em; Adjusted based on header size */
+  /* was 60px */
 }
 
 /* red outline button in navbar and research components */

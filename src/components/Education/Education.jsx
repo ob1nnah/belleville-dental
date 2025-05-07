@@ -1,10 +1,16 @@
 import React from 'react'
 import LCard from '../LCard/LCard.jsx'
+import { motion } from 'framer-motion'
 
 const Education = () => {
     return (
-        <div>
-            <>
+        <>
+            <motion.div
+                initial={{ opacity: 0, y: 20 }}   //same with motion.div in Products.jsx Research.jsx, App.jsx,  and Aboutus.jsx
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ duration: 0.4 }}
+            >
                 <section>
                     <div className="d-flex flex-column lh-1">
                         <span className="pgtitle fw-bold txtcolor3 mt-4 cm-width">LEARN WITH US</span>
@@ -15,8 +21,8 @@ const Education = () => {
                         <LCard cimg="edu2.png" icon="edulogo2.png" iconalt="edulogo2" caption="Professional Development" subcaption="Continuing education for dental professionals" alt="education banner" />
                     </div>
                 </section>
-            </>
-        </div>
+            </motion.div>
+        </>
     )
 }
 
