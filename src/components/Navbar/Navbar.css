@@ -50,21 +50,7 @@
   color: #ff6b6b;
 }
 
-/* Media query for smaller screens */
-/* @media (max-width: 768px) {
-  .header {
-      flex-direction: column;
-      padding: calc((20 / 1920) * 100vw);
-  }
-  .navbar-span {
-      flex-direction: column;
-      gap: calc((32 / 1920) * 100vw);
-  }
-  .logo-title-div {
-      gap: calc((4 / 1920) * 100vw);
-  }
-} */
- /* Media query for smaller screens */
+
 @media (max-width: 768px) {
   .header {
     flex-direction: column;
