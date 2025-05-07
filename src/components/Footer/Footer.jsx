@@ -68,14 +68,14 @@ const Footer = () => {
                 <section className="footer-container">
                     <div className="row">
                         <div className="col-md-3 sitemp">
-                            <Link to={`/`} className="logo-title-div footer">
+                            <Link to={`/#`} className="logo-title-div footer">
                                 <img src="logowhite.svg" alt="Belleville Dental Logo" className="logo" />
                                 <span className="fw-bold txtcolor1" >Belleville Dental</span>
                             </Link>
                             <p className="footercaption fw-light">Professional dental care for your perfect smile</p>
                         </div>
                         <div className="col-md-3 mb-4 sitemp">
-                            <span className="fw-bold"><HashLink smooth to={`/`} className="txtcolor1">Home</HashLink></span>
+                            <span className="fw-bold"><HashLink smooth to={`/#`} className="txtcolor1">Home</HashLink></span>
                             <ul>
                                 <li><HashLink smooth to={`/#gallery`} className="txtcolor1 sitemp-links">Gallery</HashLink></li>
                                 <li><HashLink smooth to={`/aboutus/#`} className="txtcolor1 sitemp-links">About Us</HashLink></li>

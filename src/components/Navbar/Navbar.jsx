@@ -6,7 +6,7 @@ import { Link, NavLink } from 'react-router-dom';
 const Navbar = () => {
     return (
         <header className="header sticky-top">
-           <Link to={`/`} className="logo-title-div">
+           <Link to={`/#`} className="logo-title-div">
                 <img src="logo.svg" alt="Belleville Dental Logo" className="logo" />
                 <span className="title fw-bold txtcolor3" >Belleville Dental</span>
             </Link>
