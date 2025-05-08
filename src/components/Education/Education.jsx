@@ -4,10 +4,10 @@ import { motion } from 'framer-motion'
 import './Education.css'
 
 //images
-import edulogo1 from '../../../public/edulogo1.png';
-import edulogo2 from '../../../public/edulogo2.png';
-import edu1 from '../../../public/edu1.png';
-import edu2 from '../../../public/edu2.png';
+import edulogo1 from '/edulogo1.png';
+import edulogo2 from '/edulogo2.png';
+import edu1 from '/edu1.png';
+import edu2 from '/edu2.png';
 
 const Education = () => {
     return (

@@ -1,8 +1,8 @@
 import React from 'react';
 import './Hero.css';
 //images
-import HeroImage from '../../../public/1BG.png';
-import WhiteStore from '../../../public/store-icon.png';
+import HeroImage from '/1BG.png';
+import WhiteStore from '/store-icon.png';
 
 
 

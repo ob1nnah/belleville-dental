@@ -4,7 +4,7 @@ import './FAQContactUs.css';
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaClock } from 'react-icons/fa';
 
 //media
-import ContactUs1 from '../../../public/2BG.png';
+import ContactUs1 from '/2BG.png';
 
 const FAQItem = ({ question, answer }) => {
     const [isOpen, setIsOpen] = useState(false);

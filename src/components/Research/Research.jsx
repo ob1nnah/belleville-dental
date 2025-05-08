@@ -4,11 +4,11 @@ import LCard from '../LCard/LCard.jsx'
 import { motion } from 'framer-motion'
 
 //media
-import rlogo1 from '../../../public/rlogo1.png';
-import rlogo2 from '../../../public/rlogo2.png';
-import research1 from '../../../public/research1.png';
-import research2 from '../../../public/research2.png';
-import researchvideo from '../../../public/research.mp4';
+import rlogo1 from '/rlogo1.png';
+import rlogo2 from '/rlogo2.png';
+import research1 from '/research1.png';
+import research2 from '/research2.png';
+import researchvideo from '/research.mp4';
 
 const JustACard = ({ statsno, statsdesc }) => {
     return (

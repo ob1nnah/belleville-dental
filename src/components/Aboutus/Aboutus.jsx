@@ -3,10 +3,10 @@ import './AboutUs.css'
 import { motion } from 'framer-motion'
 import { FaTooth } from 'react-icons/fa'
 //media
-import mission1 from '../../../public/mission1.png';
-import mission2 from '../../../public/mission2.png';
-import mission3 from '../../../public/mission3.png';
-import mission4 from '../../../public/mission4.png'
+import mission1 from '/mission1.png';
+import mission2 from '/mission2.png';
+import mission3 from '/mission3.png';
+import mission4 from '/mission4.png'
 
 const AboutUsCard = ({ audesc }) => {
     return (

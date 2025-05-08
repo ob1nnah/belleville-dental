@@ -3,7 +3,7 @@ import './Navbar.css';
 import { Link, NavLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
 //images
-import logo from '../../../public/logo.svg';
+import logo from '/logo.svg';
 
 const Navbar = () => {
     return (

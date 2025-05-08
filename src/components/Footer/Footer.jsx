@@ -6,7 +6,7 @@ import { FaXTwitter } from 'react-icons/fa6';
 import { HashLink } from 'react-router-hash-link';
 
 //images
-import logowhite from '../../../public/logowhite.svg';
+import logowhite from '/logowhite.svg';
 
 const Ticker = () => {
     const [locationText, setLocationText] = useState('Locating…');
