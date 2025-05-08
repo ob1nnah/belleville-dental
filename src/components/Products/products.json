@@ -1,0 +1,56 @@
+[
+    {
+      "id": 1,
+      "name": "Premium Dental Floss",
+      "description": "Extra soft, waxed dental floss for sensitive gums",
+      "price": 4599.99,
+      "image": "products/floss.png",
+      "rating": 4.5,
+      "ratingCount": 28
+    },
+    {
+      "id": 2,
+      "name": "Sonic Toothbrush",
+      "description": "Advanced sonic technology for superior cleaning",
+      "price": 12999.99,
+      "image": "products/stoothbrush.png",
+      "rating": 4.8,
+      "ratingCount": 152
+    },
+    {
+      "id": 3,
+      "name": "Whitening Toothpaste",
+      "description": "Gentle whitening formula that removes stains without harming enamel",
+      "price": 799.99,
+      "image": "products/whiteningpaste.png",
+      "rating": 4.2,
+      "ratingCount": 67
+    },
+    {
+      "id": 4,
+      "name": "Interdental Brushes",
+      "description": "Set of 4 sizes for thorough cleaning between teeth",
+      "price": 649.99,
+      "image": "products/interdental.png",
+      "rating": 4.6,
+      "ratingCount": 43
+    },
+    {
+      "id": 5,
+      "name": "Sensitive Teeth Mouthwash",
+      "description": "Alcohol-free formula specially designed for sensitive teeth",
+      "price": 899.99,
+      "image": "products/mouthwash.png",
+      "rating": 4.3,
+      "ratingCount": 89
+    },
+    {
+      "id": 6,
+      "name": "Kids Dinosaur Toothbrush",
+      "description": "Fun design to encourage children to brush regularly",
+      "price": 399.99,
+      "image": "products/dinobrush.png",
+      "rating": 4.9,
+      "ratingCount": 36
+    }
+  ]

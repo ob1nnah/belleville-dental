@@ -2,13 +2,18 @@ import React from 'react'
 import './AboutUs.css'
 import { motion } from 'framer-motion'
 import { FaTooth } from 'react-icons/fa'
+//media
+import mission1 from '../../../public/mission1.png';
+import mission2 from '../../../public/mission2.png';
+import mission3 from '../../../public/mission3.png';
+import mission4 from '../../../public/mission4.png'
 
 const AboutUsCard = ({ audesc }) => {
     return (
         <>
             <div className="info-card">
                 <div className="icon"><FaTooth /></div>
-                <p className="card-title">{audesc}</p>
+                <p className="card-title mt-2">{audesc}</p>
             </div>
         </>
     )
@@ -38,10 +43,10 @@ const Aboutus = () => {
                         <span className="mission-title txtcolor3 mt-4 mb-4">Our Mission</span>
                         <p className="customgrey mission-text">"Experience gentle, professional care the gives you confidence to smile. Progessive dental solutions for your family."</p>
                         <ul className="list-unstyled d-flex flex-column">
-                            <MissionList missionimgcaption="doctor silhoutte" missionimg="mission1.png" missioncaption="Expert Team" />
-                            <MissionList missionimgcaption="people silhoutte" missionimg="mission2.png" missioncaption="Family Focus" />
-                            <MissionList missionimgcaption="badge" missionimg="mission3.png" missioncaption="Quality Care" />
-                            <MissionList missionimgcaption="medical help" missionimg="mission4.png" missioncaption="Gentle Care" />
+                            <MissionList missionimgcaption="doctor silhoutte" missionimg={mission1} missioncaption="Expert Team" />
+                            <MissionList missionimgcaption="people silhoutte" missionimg={mission2} missioncaption="Family Focus" />
+                            <MissionList missionimgcaption="badge" missionimg={mission3} missioncaption="Quality Care" />
+                            <MissionList missionimgcaption="medical help" missionimg={mission4} missioncaption="Gentle Care" />
                         </ul>
                     </div>
 

@@ -31,10 +31,10 @@
 
 .info-card {
   background: #f9fafb;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
-  padding: 2em;
-  width: 380px;
+  border-radius: 1em;
+  box-shadow: 0 0.25em 0.825em rgba(0, 0, 0, 0.06);
+  padding: 4em;
+  width: 24em;
   transition: transform 0.3s ease;
 }
 

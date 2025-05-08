@@ -1,9 +1,12 @@
-import Hero from "./components/Hero/Hero.jsx";
 import Navbar from "./components/Navbar/Navbar.jsx";
 import Research from './components/Research/Research.jsx';
-import Gallery from './components/Gallery/Gallery.jsx';
 import Education from './components/Education/Education.jsx';
 import Aboutus from './components/Aboutus/Aboutus.jsx';
+//Home page
+import Hero from "./components/Hero/Hero.jsx";
+import Gallery from './components/Gallery/Gallery.jsx';
+import FAQContactUs from "./components/FAQContactUs/FAQContactUs.jsx";
+//footer
 import Footer from './components/Footer/Footer.jsx';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { motion } from 'framer-motion';
@@ -23,7 +26,7 @@ const App = () => {
                         exit={{ opacity: 0, y: -20 }}
                         transition={{ duration: 0.4 }}
                      >
-                        <Hero /><Gallery />
+                        <Hero /><Gallery /><FAQContactUs />
                      </motion.div>
                   </>} />
                   <Route path="/research" element={<Research />} />

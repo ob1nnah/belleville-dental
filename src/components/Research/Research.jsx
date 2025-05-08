@@ -3,6 +3,13 @@ import './Research.css'
 import LCard from '../LCard/LCard.jsx'
 import { motion } from 'framer-motion'
 
+//media
+import rlogo1 from '../../../public/rlogo1.png';
+import rlogo2 from '../../../public/rlogo2.png';
+import research1 from '../../../public/research1.png';
+import research2 from '../../../public/research2.png';
+import researchvideo from '../../../public/research.mp4';
+
 const JustACard = ({ statsno, statsdesc }) => {
     return (
         <>
@@ -25,12 +32,20 @@ const Research = () => {
             >
                 <section>
                     <div className="d-flex flex-column lh-1">
-                        <span className="pgtitle fw-bold txtcolor3 mt-4 cm-width">ADVANCING DENTAL CARE</span>
-                        <span className="pgsubtitle fw-normal txtcolor2 mt-4">BRIGHTER FUTURES THROUGH RESEARCH</span>
+                        <span className="pgtitle fw-bold txtcolor3 cm-width">ADVANCING DENTAL CARE</span>
+                        <span className="pgsubtitle fw-normal txtcolor2">BRIGHTER FUTURES THROUGH RESEARCH</span>
+                    </div>
+                    <div className="video-container">
+                        <iframe
+                            className="educationvideo"
+                            src={researchvideo}
+                            frameBorder="0"
+                            allowFullScreen
+                        ></iframe>
                     </div>
                     <div className="d-flex justify-content-between">
-                        <LCard cimg="research1.png" icon="rlogo1.png" iconalt="rlogo1" caption="Clinical Studies" subcaption="Leading research in dental treatments and procedures" alt="research banner" />
-                        <LCard cimg="research2.png" icon="rlogo2.png" iconalt="rlogo2" caption="Innovation in Technology" subcaption="Developing cutting-edge dental technologies" alt="research banner" />
+                        <LCard cimg={research1} icon={rlogo1} iconalt="rlogo1" caption="Clinical Studies" subcaption="Leading research in dental treatments and procedures" alt="research banner" />
+                        <LCard cimg={research2} icon={rlogo2} iconalt="rlogo2" caption="Innovation in Technology" subcaption="Developing cutting-edge dental technologies" alt="research banner" />
                     </div>
                     <span className="statstitle d-flex justify-content-center mt-5 fw-semibold txtcolor3">Research Impact</span>
                     <div>

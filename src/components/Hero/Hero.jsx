@@ -1,12 +1,16 @@
 import React from 'react';
 import './Hero.css';
+//images
+import HeroImage from '../../../public/1BG.png';
+import WhiteStore from '../../../public/store-icon.png';
+
 
 
 const ProductButton = () => {
     return (
 
         <button className="heroproduct-btn fw-semibold c-shadow align-items-center">
-            <img src="store-icon.png" alt="White Box" className="p-icon" />
+            <img src={WhiteStore} alt="White Box" className="p-icon" />
             Check out our Products
         </button>
     );
@@ -27,7 +31,7 @@ const HeroSection = () => {
                 </p>
                 <ProductButton />
             </div>
-            <img draggable="false" className="hero-image imgfx" src="1BG.png" alt="" />
+            <img draggable="false" className="hero-image imgfx" src={HeroImage} alt="" />
         </div>
     );
 };

@@ -2,6 +2,8 @@ import React from 'react';
 import './Navbar.css';
 import { Link, NavLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
+//images
+import logo from '../../../public/logo.svg';
 
 const Navbar = () => {
     return (
@@ -12,7 +14,7 @@ const Navbar = () => {
                 exit={{ opacity: 0, y: -20 }}
                 transition={{ duration: 0.4 }}>
                 <Link to={`/#`} className="logo-title-div">
-                    <img src="logo.svg" alt="Belleville Dental Logo" className="logo" />
+                    <img src={logo} alt="Belleville Dental Logo" className="logo" />
                     <span className="title fw-bold txtcolor3" >Belleville Dental</span>
                 </Link>
             </motion.div>

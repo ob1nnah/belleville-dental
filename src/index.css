@@ -6,9 +6,8 @@
 .customgrey {color: #4B5563;}
 
 /* scrolling fix */
-html {
-  scroll-padding-top: auto; /* Adjust based on your header size */
-  /* scroll-padding-top: 5em; Adjusted based on header size */
+* {
+  scroll-padding-top: 8em; /* Adjusted based on your header size */
   /* was 60px */
 }
 

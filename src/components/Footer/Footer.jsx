@@ -5,6 +5,9 @@ import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 import { HashLink } from 'react-router-hash-link';
 
+//images
+import logowhite from '../../../public/logowhite.svg';
+
 const Ticker = () => {
     const [locationText, setLocationText] = useState('Locating…');
     const [dateTime, setDateTime] = useState(new Date());
@@ -69,7 +72,7 @@ const Footer = () => {
                     <div className="row">
                         <div className="col-md-3 sitemp">
                             <Link to={`/#`} className="logo-title-div footer">
-                                <img src="logowhite.svg" alt="Belleville Dental Logo" className="logo" />
+                                <img src={logowhite} alt="Belleville Dental Logo" className="logo" />
                                 <span className="fw-bold txtcolor1" >Belleville Dental</span>
                             </Link>
                             <p className="footercaption fw-light">Professional dental care for your perfect smile</p>
@@ -81,9 +84,7 @@ const Footer = () => {
                                 <li><HashLink smooth to={`/aboutus/#`} className="txtcolor1 sitemp-links">About Us</HashLink></li>
                                 <li><HashLink smooth to={`/#faq`} className="txtcolor1 sitemp-links">FAQ</HashLink></li>
                                 <li><HashLink smooth to={`/#contactus`} className="txtcolor1 sitemp-links">Contact Us</HashLink></li>
-
-                                {/* <li><a href="#" className="txtcolor1 sitemp-links text-decoration-none">Home</a></li>
-                                <li><a href="#" className="txtcolor1 sitemp-links text-decoration-none">About Us</a></li> */}
+                                <li><HashLink smooth to={`/products/#`} className="txtcolor1 sitemp-links">Products</HashLink></li>
                             </ul>
                         </div>
                         <div className="col-md-3 mb-4 sitemp">
