@@ -1,6 +1,6 @@
 import React from 'react';
 import './Hero.css';
-//images
+//media
 import HeroImage from '/1BG.png';
 import WhiteStore from '/store-icon.png';
 

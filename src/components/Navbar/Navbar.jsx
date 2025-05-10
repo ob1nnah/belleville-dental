@@ -2,7 +2,7 @@ import React from 'react';
 import './Navbar.css';
 import { Link, NavLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
-//images
+//media
 import logo from '/logo.svg';
 import VisitorCounter from '../../helper/VisitorCounter';
 

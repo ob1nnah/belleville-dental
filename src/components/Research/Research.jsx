@@ -9,6 +9,9 @@ import rlogo2 from '/rlogo2.png';
 import research1 from '/research1.png';
 import research2 from '/research2.png';
 import researchvideo from '/research.mp4';
+import ClinicalStudies from '../../assets/docs/Clinical Studies Overview.pdf';
+import InnovationinTechnology from '../../assets/docs/Innovation in Technology Overview.pdf';
+
 
 const JustACard = ({ statsno, statsdesc }) => {
     return (
@@ -44,8 +47,8 @@ const Research = () => {
                         ></iframe>
                     </div>
                     <div className="d-flex justify-content-between">
-                        <LCard cimg={research1} icon={rlogo1} iconalt="rlogo1" caption="Clinical Studies" subcaption="Leading research in dental treatments and procedures" alt="research banner" />
-                        <LCard cimg={research2} icon={rlogo2} iconalt="rlogo2" caption="Innovation in Technology" subcaption="Developing cutting-edge dental technologies" alt="research banner" />
+                        <LCard filename={ClinicalStudies} cimg={research1} icon={rlogo1} iconalt="rlogo1" caption="Clinical Studies" subcaption="Leading research in dental treatments and procedures" alt="research banner" />
+                        <LCard filename={InnovationinTechnology} cimg={research2} icon={rlogo2} iconalt="rlogo2" caption="Innovation in Technology" subcaption="Developing cutting-edge dental technologies" alt="research banner" />
                     </div>
                     <span className="statstitle d-flex justify-content-center mt-5 fw-semibold txtcolor3">Research Impact</span>
                     <div>

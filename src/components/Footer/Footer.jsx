@@ -5,7 +5,7 @@ import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 import { HashLink } from 'react-router-hash-link';
 
-//images
+//media
 import logowhite from '/logowhite.svg';
 
 const Ticker = () => {

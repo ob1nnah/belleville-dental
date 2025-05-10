@@ -5,7 +5,7 @@ import { FaTooth, FaUsers } from 'react-icons/fa'
 import { MdFamilyRestroom } from 'react-icons/md'
 import { GiRibbonMedal } from 'react-icons/gi'
 import { FaHandHoldingMedical } from 'react-icons/fa'
-import dental from '../../assets/images/dental-ops.jpg'
+import dental from '/dental-ops.jpg'
 
 const features = [
   { icon: <FaUsers />, label: 'Expert Team' },
@@ -29,16 +29,15 @@ const Aboutus = () => {
       transition={{ duration: 0.4 }}
     >
       {/* Page Title */}
-      <section className="c-pad">
-        <div className="d-flex flex-column lh-2">
-          <span className="pgtitle fw-bold txtcolor3 ">OUR</span>
-          <span className="pgtitle fw-bold txtcolor3 ">COMMITMENT</span>
+      <section>
+        <div className="d-flex flex-column lh-1">
+          <span className="pgtitle fw-bold txtcolor3">OUR COMMITMENT</span>
           <span className="pgsubtitle fw-normal txtcolor2">TO DENTAL EXCELLENCE</span>
         </div>
       </section>
 
       {/* Two‑column Commitment Section */}
-      <section className="commitment-section c-pad">
+      <section className="commitment-section">
         {/* Left side */}
         <motion.div
           className="commitment-content"
@@ -46,7 +45,7 @@ const Aboutus = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <h3 className="our-mission txtcolor3">Our Mission</h3>
+          <h3 className="our-mission txtcolor3 mt-5">Our Mission</h3>
           <p className="mission-text txtcolor4">
             Experience gentle, professional care that gives you confidence to smile. Progressive dental solutions for your entire family.
           </p>
@@ -75,14 +74,14 @@ const Aboutus = () => {
         >
           <img
             src={dental}
-            className='dental-image'
+            className='dental-image imgfx'
             alt="Dental Clinic"
           />
         </motion.div>
       </section>
 
       {/* Three cards in place of pictures */}
-      <section className="about-section c-pad">
+      <section className="about-section">
         <div className="card-container">
           {cards.map((c, i) => (
             <motion.div
@@ -92,7 +91,7 @@ const Aboutus = () => {
               transition={{ type: 'spring', stiffness: 300 }}
             >
               <div className="icon txtcolor3">{c.icon}</div>
-              <p className="card-title txtcolor4">{c.title}</p>
+              <p className="card-title txtcolor3">{c.title}</p>
             </motion.div>
           ))}
         </div>

@@ -153,7 +153,7 @@ const Products = () => {
                         <span className="pgtitle fw-bold txtcolor3 mt-4">OUR PRODUCTS</span>
                         <span className="pgsubtitle fw-normal txtcolor2">QUALITY DENTAL CARE PRODUCTS</span>
                     </div>
-                    <span className="pgsubtitle fw-light txtcolor3">To purchase any of our products, please contact us at <FaPhone/>+234 913 427 3883</span>
+                    <span className="pgsubtitle fw-light txtcolor3">To purchase any of our products, please contact us at <FaPhone/>+234 911 738 3809</span>
                     <div className="products-container">
                         {products.map(product => (
                             <Product 

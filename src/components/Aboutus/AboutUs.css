@@ -2,9 +2,7 @@
 .commitment-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: var(--base-spacing);
   align-items: start;
-  margin-top: 5vh;
 }
 
 .commitment-content {
@@ -21,8 +19,6 @@
 .features-grid {
   display: grid;
   grid-template-columns: repeat(2, 2fr);
-  gap: var(--base-spacing);
-  margin-top: 5vh;
 }
 
 .feature-item {
@@ -47,7 +43,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 5em;
+  gap: 2em;
   margin-top: 5em;
 }
 
@@ -56,7 +52,7 @@
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
   padding: 2em;
-  width: 380px;
+  width: 22em;
   cursor: pointer;
   align-items: center;
   vertical-align: middle;
@@ -82,10 +78,10 @@
 }
 
 .dental-image{
-  width: 100%;
+  width: 42vw;
+  float: right;
   border-radius: 1rem;
   display: block;
-  height: 40rem;
 }
 
 /* Responsive tweaks */
@@ -113,10 +109,17 @@
   .mission-text {
     font-size: 1em;
   }
+  .commitment-section {
+    display: flex;
+    flex-direction: column;
+  }
   .dental-image {
-    margin-top: var(--base-spacing);
-    height: 20rem;
     width: 90%;
-    margin-top: 2rem;
+    max-height: 20rem;
+    float: none;
+    display: block;
+    margin: 2em 2.25em 0;
+    border-radius: 1rem;
+    object-fit: cover;
   }
 }

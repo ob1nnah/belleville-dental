@@ -94,11 +94,11 @@ const FAQAndContactUs = () => {
                         <h3>Get in Touch</h3>
                         <div className="contact-detail">
                             <FaEnvelope className="contact-icon" />
-                            <span>info@bellevilledentals.com</span>
+                            <span>info@bellevilledental.com</span>
                         </div>
                         <div className="contact-detail">
                             <FaPhone className="contact-icon" />
-                            <span>+234 875 895 8585</span>
+                            <span>+234 911 738 3809</span>
                         </div>
                         <div className="contact-detail">
                             <FaMapMarkerAlt className="contact-icon" />
