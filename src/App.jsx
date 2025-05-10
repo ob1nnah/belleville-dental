@@ -11,11 +11,13 @@ import Footer from './components/Footer/Footer.jsx';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Products from "./components/Products/Products.jsx";
+import ScrollToTop from "./helper/ScrollToTop.jsx";
 
 const App = () => {
    return (
       <>
          <BrowserRouter>
+         <ScrollToTop />
             <main className="c-pad">
                <Navbar />
                <Routes>

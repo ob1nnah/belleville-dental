@@ -4,6 +4,7 @@ import { Link, NavLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
 //images
 import logo from '/logo.svg';
+import VisitorCounter from '../../helper/VisitorCounter';
 
 const Navbar = () => {
     return (
@@ -29,6 +30,7 @@ const Navbar = () => {
                     <NavLink to={`/aboutus`} className={({ isActive }) => isActive ? "fw-semibold nav-link active" : "fw-semibold nav-link"}>ABOUT US</NavLink>
                     <NavLink to={`/education`} className={({ isActive }) => isActive ? "fw-semibold nav-link active" : "fw-semibold nav-link"}>EDUCATION</NavLink>
                     <NavLink to={`products`} className={({ isActive }) => isActive ? "fw-semibold nav-link redbtn active" : "fw-semibold nav-link redbtn"}>PRODUCTS</NavLink>
+                    <VisitorCounter />
                 </nav>
             </motion.div>
         </header>
