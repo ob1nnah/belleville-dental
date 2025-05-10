@@ -17,8 +17,8 @@ const VisitorCounter = () => {
   }, []);
 
   return (
-    <span style={{ fontSize: "0.9rem", marginLeft: "10px", color: "#ff6b6b", fontFamily: "cursive", fontWeight: "bolder" }}>
-      👁️ Visitors: {visitorCount}
+    <span title="Visitor Count" style={{ fontSize: "0.9rem", marginLeft: "10px", color: "#ff6b6b", fontFamily: "cursive", fontWeight: "bolder" }}>
+      👁️: {visitorCount}
     </span>
   );
 };
