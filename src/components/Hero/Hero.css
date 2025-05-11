@@ -1,132 +1,149 @@
-
+/* hero */
 :root {
-    /* --hero-height: calc((1040 / 1920) * 100vw); */
-    --hero-height: calc((900 / 1920) * 100vw);
-    --hero-text-maxwidth: calc((500 / 1920) * 100vw);
-    --image-size: calc((850 / 1920) * 100vw);
-    --t-font-size: calc((160 / 1920) * 100vw); /* Title font size */
-    --st-font-size: calc((140 / 1920) * 100vw); /* Subtitle font size */
-    --p-font-size: calc((20 / 1920) * 100vw);
-    --btn-font-size: calc((16 / 1920) * 100vw);
-        --btn-padding-v: calc((20 / 1920) * 100vw);
-        --btn-padding-h: calc((36 / 1920) * 100vw);
-        --btn-border-radius: calc((50 / 1920) * 100vw);
-        --btn-gap: calc((8 / 1920) * 100vw);
+  /* --hero-height: calc((1040 / 1920) * 100vw); */
+  --hero-height: calc((900 / 1920) * 100vw);
+  --hero-text-maxwidth: calc((500 / 1920) * 100vw);
+  --image-size: calc((850 / 1920) * 100vw);
+  --t-font-size: calc((160 / 1920) * 100vw); /* Title font size */
+  --st-font-size: calc((140 / 1920) * 100vw); /* Subtitle font size */
+  --p-font-size: calc((20 / 1920) * 100vw);
+  --btn-font-size: calc((16 / 1920) * 100vw);
+  --btn-padding-v: calc((20 / 1920) * 100vw);
+  --btn-padding-h: calc((36 / 1920) * 100vw);
+  --btn-border-radius: calc((50 / 1920) * 100vw);
+  --btn-gap: calc((8 / 1920) * 100vw);
+}
+
+.hero-container {
+  height: var(--hero-height);
+  justify-content: space-between;
+  /* position: relative; */
+}
+
+.hero-text {
+  max-width: var(--hero-text-maxwidth);
+}
+
+.t-fontsize {
+  font-size: var(--t-font-size);
+}
+.st-fontsize {
+  font-size: var(--st-font-size);
+}
+
+.p-fontsize {
+  /* font-size: 1em; */
+  font-size: var(--p-font-size);
+}
+
+.hero-image {
+  width: var(--image-size);
+  height: auto;
+  position: relative;
+  align-self: flex-end;
+  object-fit: contain;
+  /* bottom: 0; */
+}
+
+.c-shadow,
+.imgfx {
+  box-shadow: 0em 0.2em 0.3em 0em rgba(0, 0, 0, 0.2);
+}
+.imgfx {
+  opacity: 0.8; /* out of 1 so it is 80% */
+}
+.heroproduct-btn {
+  background-color: #ff6b6b;
+  border: none;
+  border-radius: var(--btn-border-radius);
+  padding: var(--btn-padding-v) var(--btn-padding-h);
+  width: fit-content;
+  color: white;
+  font-size: var(--btn-font-size);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  display: inline-flex;
+  gap: var(--btn-gap);
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Hover */
+.heroproduct-btn:hover {
+  background-color: #ff4c4c;
+}
+
+/* Image/icon styling */
+.p-icon {
+  height: 1.5em;
+  width: 1.5em;
+}
+
+@media (max-width: 1200px) {
+  :root {
+    --hero-height: calc((1000 / 1920) * 100vw);
+    --hero-text-maxwidth: calc((400 / 1920) * 100vw);
+    --image-size: calc((700 / 1920) * 100vw);
+  }
+}
+
+@media (max-width: 992px) {
+  :root {
+    --t-font-size: calc((120 / 1920) * 100vw);
+    --st-font-size: calc((100 / 1920) * 100vw);
+    --p-font-size: calc((18 / 1920) * 100vw);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    /* flex-direction: column-reverse; */
+    height: auto;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .hero-text {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  .hero-image {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .heroproduct-btn {
+    margin: 0 auto;
+    padding: 0.75em 1.5em;
+  }
+
+  :root {
+    --t-font-size: calc((80 / 1920) * 100vw);
+    --st-font-size: calc((70 / 1920) * 100vw);
+    --p-font-size: calc((16 / 1920) * 100vw);
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --t-font-size: calc((60 / 1920) * 100vw);
+    --st-font-size: calc((50 / 1920) * 100vw);
+    --p-font-size: calc((14 / 1920) * 100vw);
   }
 
   .hero-container {
-      height: var(--hero-height);
-      justify-content: space-between;
-      /* position: relative; */
-    }
-    
-    .hero-text {
-        max-width: var(--hero-text-maxwidth);
-    }
-
-    
-    .t-fontsize {
-        font-size: var(--t-font-size);
-    }
-    .st-fontsize {
-        font-size: var(--st-font-size);
-    }
-
-    .p-fontsize {
-        /* font-size: 1em; */
-        font-size: var(--p-font-size);
-    }
-
-    .hero-image {
-        background-color: #ccc; /* Placeholder for image */
-        width: var(--image-size);
-        height: var(--image-size);
-        position: relative;
-        bottom: 0;
-        align-self: flex-end; /* aligns the image to bottom */
-    }
-
-    .c-shadow, .imgfx {
-        box-shadow: 0em 0.2em 0.3em 0em rgba(0, 0, 0, 0.2);
-    }
-    .imgfx {
-        opacity: 0.8; /* out of 1 so it is 80% */
-    }
-    .heroproduct-btn {
-        background-color: #ff6b6b;
-        border: none;
-        border-radius: var(--btn-border-radius);
-        padding: var(--btn-padding-v) var(--btn-padding-h);
-        width: fit-content;
-        color: white;
-        font-size: var(--btn-font-size);
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-        
-        display: inline-flex;
-        gap: var(--btn-gap);
-        text-decoration: none;
-        text-align: center;
-    }
-    
-    /* Hover */
-    .heroproduct-btn:hover {
-        background-color: #ff4c4c;
-    }
-    
-    /* Image/icon styling */
-    .p-icon {
-        height: 1.5em;
-        width: 1.5em;
-    }
-
-/* Media queries for hero section */
-@media (max-width: 1024px) {
-    .hero-container {
-      --hero-height: calc((1200 / 1920) * 100vw);
-    }
-    
-    .hero-text {
-      max-width: 50%;
-    }
-    
-    .hero-image {
-      width: 45%;
-      height: auto;
-    }
+    padding: 1rem 0;
   }
-  
-  @media (max-width: 768px) {
-    .hero-container {
-      --hero-height: auto;
-      flex-direction: column-reverse;
-      padding: 2em 0;
-    }
-    
-    .hero-text {
-      max-width: 100%;
-      padding: 0;
-      text-align: center;
-      margin-top: 2em;
-    }
-    
-    .heroproduct-btn {
-      margin: 1.5em auto;
-      padding: 0.75em 1.5em;
-      font-size: calc((20 / 1920) * 100vw);
-    }
-    
-    .hero-image {
-      width: 90%;
-      height: auto;
-      margin: 0 auto;
-    }
-    
-    .t-fontsize {
-      font-size: calc((100 / 1920) * 100vw);
-    }
-    
-    .st-fontsize {
-      font-size: calc((80 / 1920) * 100vw);
-    }
+
+  .hero-image {
+    width: 95%;
+    margin: 0 auto;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
   }
+}

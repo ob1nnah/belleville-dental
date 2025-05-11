@@ -7,6 +7,12 @@ import { HashLink } from 'react-router-hash-link';
 
 //media
 import logowhite from '/logowhite.svg';
+import ClinicalStudies from '../../assets/docs/Clinical Studies Overview.pdf';
+import InnovationinTechnology from '../../assets/docs/Innovation in Technology Overview.pdf';
+import PatientEducation from '../../assets/docs/Empowering Patients Through Knowledge.pdf';
+import ProfessionalDevelopment from '../../assets/docs/Advancing Skills for Modern Dentistry.pdf';
+
+
 
 const Ticker = () => {
     const [locationText, setLocationText] = useState('Locating…');
@@ -90,15 +96,15 @@ const Footer = () => {
                         <div className="col-md-3 mb-4 sitemp">
                             <span className="fw-bold"><HashLink smooth to={`/research/#`} className="txtcolor1">Research</HashLink></span>
                             <ul>
-                                <li><a href="#" className="txtcolor1 sitemp-links text-decoration-none">Clinical Studies</a></li>
-                                <li><a href="#" className="txtcolor1 sitemp-links text-decoration-none">Innovation in Technology</a></li>
+                                <li><a href={ClinicalStudies} target="_blank" className="txtcolor1 sitemp-links text-decoration-none">Clinical Studies</a></li>
+                                <li><a href={InnovationinTechnology} target="_blank" className="txtcolor1 sitemp-links text-decoration-none">Innovation in Technology</a></li>
                             </ul>
                         </div>
                         <div className="col-md-3 mb-4 sitemp">
                         <span className="fw-bold"><HashLink smooth to={`/education/#`} className="txtcolor1">Education</HashLink></span>
                             <ul>
-                                <li><a href="#" className="txtcolor1 sitemp-links text-decoration-none">Professional Education</a></li>
-                                <li><a href="#" className="txtcolor1 sitemp-links text-decoration-none">Patient Education</a></li>
+                                <li><a href={ProfessionalDevelopment} target="_blank" className="txtcolor1 sitemp-links text-decoration-none">Professional Education</a></li>
+                                <li><a href={PatientEducation} target="_blank" className="txtcolor1 sitemp-links text-decoration-none">Patient Education</a></li>
                             </ul>
                         </div>
                         <div className="col-md-3 mb-4 sitemp">
