@@ -36,10 +36,11 @@ a{
     padding: 2em 1.25em;
     margin: 0 1.25em;
     cursor: pointer;
+    transition: transform 0.3s ease-in-out;
 }
+
 .justacard:hover {
   transform: scale(1.02);
-  transition: 0.3s ease-in-out;
 }
 
 .statsno{
@@ -82,99 +83,43 @@ a{
 }
 
 
-@media (max-width: 1200px) {
-  .justacard {
-    width: 30vw;
-    padding: 1.5em 1em;
-  }
-  
-  .statsno {
-    font-size: 2.2em;
-  }
-  
-  .statsdesc {
-    font-size: 1.1em;
-  }
-}
-
-@media (max-width: 992px) {
-  .justacard {
-    width: 28vw;
-    margin: 0 0.8em;
-  }
-  
-  .statsno {
-    font-size: 2em;
-  }
-  
-  .statsdesc {
-    font-size: 1em;
-  }
-  
-  .statstitle {
-    font-size: 1.6em;
-  }
-  
-  .video-container {
-    width: 90%;
-  }
-}
-
+/* Responsive statistics cards */
 @media (max-width: 768px) {
-  .justacard {
-    width: 90vw;
-    margin: 1em 0;
+    .justacard {
+      width: 30vw;
+      padding: 1.5em 1em;
+      margin: 0 0.5em;
+    }
+    
+    .statsno {
+      font-size: 2em;
+    }
+    
+    .statsdesc {
+      font-size: 1em;
+    }
+    
+    .cm-width {
+      max-width: 100%;
+    }
+    .video-container {
+      width: 95%;
+      margin: 2em auto;
+    }
   }
-  
-  .statsno {
-    font-size: 1.8em;
-  }
-  
-  .statsdesc {
-    font-size: 0.9em;
-  }
-  
-  .statstitle {
-    font-size: 1.4em;
-    margin: 0 0.8em;
-  }
-  
-  .video-container {
-    width: 95%;
-    margin: 2em auto;
-  }
-  
-  /* Stack cards vertically */
-  .research-container .d-flex.justify-content-between {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .cm-width {
-    max-width: 100%;
-  }
-}
 
-@media (max-width: 480px) {
-  .justacard {
-    width: 95vw;
-    padding: 1.2em 1em;
+  @media (max-width: 576px) {
+    .justacard {
+      width: 100%;
+      margin: 0.5em 0;
+    }
+    
+    .statstitle {
+      font-size: 1.5em;
+    }
+    
+    /* Stack statistics cards vertically */
+    .research-container .d-flex.justify-content-between {
+      flex-direction: column;
+    }
   }
-  
-  .statsno {
-    font-size: 1.6em;
-  }
-  
-  .statsdesc {
-    font-size: 0.85em;
-  }
-  
-  .statstitle {
-    font-size: 1.2em;
-  }
-  
-  .learnmorebtn {
-    padding: 0.4em 1.2em;
-    font-size: 0.9em;
-  }
-}
