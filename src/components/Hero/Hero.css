@@ -36,6 +36,9 @@
   font-size: var(--p-font-size);
 }
 
+.link{
+  color: white;
+}
 .hero-image {
   width: var(--image-size);
   height: auto;

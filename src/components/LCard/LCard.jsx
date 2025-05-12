@@ -1,21 +1,24 @@
-import React from 'react'
+import React from 'react';
 import './LCard.css';
 
-const LCard = ( {cimg, cimgalt, icon, iconalt, caption, subcaption, filename }) => {
+const LCard = ({ cimg, cimgalt, icon, iconalt, caption, subcaption, filename }) => {
     return (
         <>
-            <div className="l-card d-flex flex-column mt-4 shadow-sm">
+        <div className='flex flex-wrap '>
+            
+        
+            <div className="l-card" style={{ display: 'flex', flexDirection: 'column', marginTop: '1.5rem', boxShadow: '0 1px 3px rgba(0,0,0,0.2)' }}>
                 <img draggable="false" className="lcardimage" src={cimg} alt={cimgalt} />
-                <div className="lc-margin flex-column d-flex">
+                <div className="lc-margin" style={{ display: 'flex', flexDirection: 'column' }}>
                     <img className="lcardlogo" src={icon} alt={iconalt} />
-                    <span className="fw-bold lcardname txtcolor3">{caption}</span>
-                    <p className="">{subcaption}</p>
-                    <a href={filename} target="_blank" className="redbtn mt-3">Learn More</a>
+                    <span className="lcardname" style={{ fontWeight: 'bold', color: '#333' }}>{caption}</span>
+                    <p>{subcaption}</p>
+                    <a href={filename} target="_blank" className="redbtn" style={{ marginTop: '1rem' }}>Learn More</a>
                 </div>
             </div>
+        </div>
         </>
-    )
-}
+    );
+};
 
-
-export default LCard
+export default LCard;

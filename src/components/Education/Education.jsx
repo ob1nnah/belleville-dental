@@ -25,7 +25,7 @@ const Education = () => {
                         <span className="pgtitle fw-bold txtcolor3 cm-width">LEARN WITH US</span>
                         <span className="pgsubtitle fw-normal txtcolor2">DENTAL EDUCATION FOR ALL</span>
                     </div>
-                    <div className="d-flex justify-content-between">
+                    <div className="d-flex flex justify-content-between card-fix">
                         <LCard filename={PatientEducation} cimg={edu1} icon={edulogo1} iconalt="edulogo1" caption="Patient Education" subcaption="Comprehensive resources for dental health" alt="education banner" />
                         <LCard filename={ProfessionalDevelopment} cimg={edu2} icon={edulogo2} iconalt="edulogo2" caption="Professional Development" subcaption="Continuing education for dental professionals" alt="education banner" />
                     </div>

@@ -1,17 +1,22 @@
 import React from 'react';
 import './Hero.css';
-//media
 import HeroImage from '/1BG.png';
 import WhiteStore from '/store-icon.png';
+import { useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 
 
 const ProductButton = () => {
+      const navigate = useNavigate()
     return (
 
         <button className="heroproduct-btn fw-semibold c-shadow align-items-center">
+
             <img src={WhiteStore} alt="White Box" className="p-icon" />
+            <Link to="/products" className='link'>
             Check out our Products
+            </Link>
         </button>
     );
 }
