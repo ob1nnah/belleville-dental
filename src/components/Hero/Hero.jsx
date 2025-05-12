@@ -10,7 +10,7 @@ import WhiteStore from '/store-icon.png';
 const ProductButton = () => {
     return (
 
-        <Link to={`/products/#`} className="heroproduct-btn fw-semibold c-shadow align-items-center">
+        <Link to={`/products`} className="heroproduct-btn fw-semibold c-shadow align-items-center">
             <img src={WhiteStore} alt="White Box" className="p-icon" />
             Check out our Products</Link>
         // <button className="heroproduct-btn fw-semibold c-shadow align-items-center">
