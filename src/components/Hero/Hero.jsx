@@ -1,11 +1,9 @@
 import React from 'react';
 import './Hero.css';
 import { Link } from 'react-router-dom';
-//media
 import HeroImage from '/1BG.png';
 import WhiteStore from '/store-icon.png';
 import { useNavigate } from 'react-router-dom'
-// import { Link } from 'react-router-dom';
 
 
 
