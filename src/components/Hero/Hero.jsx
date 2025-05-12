@@ -1,5 +1,6 @@
 import React from 'react';
 import './Hero.css';
+import { Link } from 'react-router-dom';
 //media
 import HeroImage from '/1BG.png';
 import WhiteStore from '/store-icon.png';
@@ -9,10 +10,13 @@ import WhiteStore from '/store-icon.png';
 const ProductButton = () => {
     return (
 
-        <button className="heroproduct-btn fw-semibold c-shadow align-items-center">
+        <Link to={`/products/#`} className="heroproduct-btn fw-semibold c-shadow align-items-center">
             <img src={WhiteStore} alt="White Box" className="p-icon" />
-            Check out our Products
-        </button>
+            Check out our Products</Link>
+        // <button className="heroproduct-btn fw-semibold c-shadow align-items-center">
+        //     <img src={WhiteStore} alt="White Box" className="p-icon" />
+        //     Check out our Products
+        // </button>
     );
 }
 
