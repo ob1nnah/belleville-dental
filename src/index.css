@@ -1,9 +1,9 @@
 /* index */
 /*predetermined*/
-.txtcolor1 { color: #f7f7f7; }
-.txtcolor2 { color: #ff6b6b; }
-.txtcolor3 { color: #1a365d; }
-.txtcolor4 { color: #000000; }
+.txtcolor1 { color: #f7f7f7;}
+.txtcolor2 { color: #ff6b6b;}
+.txtcolor3 { color: #1a365d;}
+.txtcolor4 { color: #000000;}
 .customgrey {color: #4B5563;}
 
 /* scrolling fix */
@@ -43,6 +43,11 @@
 }
 .pgsubtitle {
   font-size: 1.5em;
+}
+a {
+  text-decoration: none;
+  width: fit-content !important; /* Fix for Lcard component */
+  color: unset;
 }
 
 

@@ -40,7 +40,7 @@ const StarRating = ({ productId, initialRating = 0, onRatingSubmit }) => {
                             />
                         </label>
                     );
-                })}-
+                })}
             </div>
             {!hasRated ? (
                 <button className="rating-btn" onClick={handleRatingSubmit}>

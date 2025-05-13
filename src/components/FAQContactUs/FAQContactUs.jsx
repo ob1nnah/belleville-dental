@@ -94,7 +94,7 @@ const FAQAndContactUs = () => {
                         <h3>Get in Touch</h3>
                         <div className="contact-detail">
                             <FaEnvelope className="contact-icon" />
-                            <span>info@bellevilledental.com</span>
+                            <span><a href="mailto:contact@bellevilledental.org">contact@bellevilledental.org</a></span>
                         </div>
                         <div className="contact-detail">
                             <FaPhone className="contact-icon" />

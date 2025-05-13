@@ -2,10 +2,6 @@
   max-width: 10em;
 }
 
-a {
-  text-decoration: none;
-  width: fit-content !important;
-}
 
 .learnmorebtn {
   border: 0.125em solid #ff6b6b;
@@ -30,7 +26,6 @@ a {
 .pgsubtitle {
   font-size: 1.2em;
   margin-bottom: 1em;
-  color: #6b7280;
 }
 
 .statstitle {
@@ -90,7 +85,6 @@ a {
   font-size: 2.5em;
   margin: 0.5em 0 0.3em;
   font-weight: bold;
-  color: #111827;
 }
 
 .statsdesc {
